@@ -18,6 +18,7 @@
 apk update &&
     apk upgrade &&
     apk add --no-cache nodejs &&
+    cd /opt/docker &&
     npm install &&
     mkdir /public &&
     mkdir /public/apps &&
