@@ -17,5 +17,5 @@ FROM alpine:3.4
 COPY root /opt/docker/
 WORKDIR /opt/docker
 RUN ["/bin/sh", "/opt/docker/run.sh"]
-ENTRYPOINT ["bin/sh", "/opt/docker/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/opt/docker/entrypoint.sh"]
 CMD []
